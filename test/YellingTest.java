@@ -24,5 +24,13 @@ public class YellingTest {
 		String actualOutput = y.Scream(null);
 		assertEquals("Nobody is yelling", actualOutput);
 	}
+	
+	@Test
+	public void testUppercaseYelling() {
+		
+		Yelling y = new Yelling();
+		String actualOutput = y.Scream("PETER");
+		assertEquals("PETER IS YELLING", actualOutput);
+	}
 
 }
