@@ -1,19 +1,23 @@
+import java.lang.reflect.Array;
 
 public class Yelling {
 	
-	public String Scream(String name) {
+	public String Scream(String[] name) {
 		
 		// Test Case When name is null
-		if (name == null) {
+		if (name[0] == "") {
 			return "Nobody is yelling";
 		}
 		
 		// Test Case when name is in uppercase
 		
-		if (name == name.toUpperCase()) {
-			return name+" IS YELLING";
+		else if (name[0] == name[0].toUpperCase()) {
+			return name[0]+" IS YELLING";
 		}
-		return name+" is yelling";
+		
+		
+		
+		return name[0]+" is yelling";
 	}
 
 }
