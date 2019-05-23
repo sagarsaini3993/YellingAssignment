@@ -11,7 +11,7 @@ public class Yelling {
 		// Test Case when name is in uppercase
 		
 		if (name == name.toUpperCase()) {
-			return "PETER IS YELLING";
+			return name+" IS YELLING";
 		}
 		return name+" is yelling";
 	}
